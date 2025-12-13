@@ -31,7 +31,7 @@ This project was built to practice **Bash scripting**, **functions**, and **basi
 ## 🛠️ Technologies Used
 
 - Bash scripting
-- Linux system commands (`df`, `tar`, `uname`, `uptime`)
+- Linux system commands (`df`, `tar`, `date`, `uptime`)
 - Shell functions
 - Conditional statements
 - Loops & case statements
