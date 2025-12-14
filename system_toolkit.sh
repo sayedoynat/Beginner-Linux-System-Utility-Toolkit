@@ -10,21 +10,25 @@ log_action (){
 }
 
 system_info (){
-
+	echo -e "\n"
 	echo "user: $USER"
 	echo "Hostname: $(hostname)"
 	echo "System booted at: $(uptime -s)"
 	echo "uptime: $(uptime)"
 	log_action "system_information"
+	echo -e "\n"
 }
 
 disk_usage (){
-	df -h /
+	echo -e "\n"
 	echo "information about Disk usage"
+	df -h /
 	log_action "Disk usage"
+	echo -e "\n"
 }
 
 backup_dir (){
+	echo -e "\n"
 	read -p "Enter directory to backup it: " dir
 	if [ -d "$dir" ]
 	then
@@ -35,7 +39,7 @@ backup_dir (){
 	else
 	   echo "Directory not found, Please try again"
 	fi
-
+	   echo -e "\n"
 }
 
 help_menu (){
@@ -45,6 +49,7 @@ help_menu (){
 	echo "2) Disk Usage"
 	echo "3) Backup Directory"
 	echo "4) Exit"
+	echo -e "\n"
 
 }
 
